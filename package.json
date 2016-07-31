@@ -1,0 +1,33 @@
+{
+  "name": "assemble-middleware-md",
+  "version": "0.1.0",
+  "description": "Assemble Middleware to parse markdown files. Uses Remarkable",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test/*-spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://criticalmash@github.com/criticalmash/assemble-middleware-md.git"
+  },
+  "keywords": [
+    "assemble",
+    "markdown",
+    "middleware"
+  ],
+  "author": "John O'Donnell (http://criticalmash.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/criticalmash/assemble-middleware-md/issues"
+  },
+  "homepage": "https://github.com/criticalmash/assemble-middleware-md#readme",
+  "dependencies": {
+    "remarkable": "^1.6.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0"
+  }
+}
