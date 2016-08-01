@@ -32,7 +32,7 @@ Like *helper-markdown* you can also pass in an options object.
 ```js
 app.pages.onLoad(/\.md$/, markdownMid({linkify: true}));
 ```
-
+See [Remarkable's README](https://github.com/jonschlinkert/remarkable) for a complete list of options.
 
 ## Tests
 
