@@ -18,7 +18,11 @@
     "markdown",
     "middleware"
   ],
-  "author": "John O'Donnell (http://criticalmash.com)",
+  "author": {
+    "email": "john@criticalmash.com",
+    "name": "John O'Donnell",
+    "url": "http://criticalmash.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/criticalmash/assemble-middleware-md/issues"
@@ -28,6 +32,7 @@
     "remarkable": "^1.6.2"
   },
   "devDependencies": {
+    "assemble": "^0.16.2",
     "chai": "^3.5.0"
   }
 }

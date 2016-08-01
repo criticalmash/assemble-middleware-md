@@ -1,8 +1,6 @@
 # assemble-middleware-md
 Assemble Middleware to parse markdown files. Uses Remarkable.
 
-> In development, currently not puplished
-
 The [markdown helper](https://github.com/assemble/assemble/blob/master/support/docs/src/content/recipes/markdown-to-html.md) technique is useful when all the pages in your site/collection are written in markdown, but can cause issues when your pages are a collection of different formats.
 
 For example, your homepage might have a complicated layout that is easier to implement using *handlebars*, but you'd like to use *markdown* on interior pages that are simpler.
@@ -27,7 +25,13 @@ var markdownMid = require('assemble-middleware-md');
 app.pages.onLoad(/\.md$/, markdownMid());
 ```
 
+Now, any page with the `.md` extension will be processed as markdown when loaded while other file types are skipped.
+
 Like *helper-markdown* you can also pass in an options object.
+
+```js
+app.pages.onLoad(/\.md$/, markdownMid({linkify: true}));
+```
 
 
 ## Tests
